@@ -15,6 +15,7 @@ class FcmServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../resources/config/notification-fcm.php' => config_path('notification-fcm.php'),
+            __DIR__ . '/../resources/front/firebase-messaging-sw.js' => public_path('firebase-messaging-sw.js'),
         ]);
     }
 
